@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="rootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="importBtn" layoutX="546.0" layoutY="396.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="导入" />
+        <Button fx:id="executeBtn" layoutX="657.0" layoutY="396.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="执行" />
+        <TableView fx:id="table" layoutX="1.0" layoutY="2.0" prefHeight="389.0" prefWidth="786.0">
+            <columns>
+            </columns>
+        </TableView>
+      <ChoiceBox fx:id="platform" layoutX="344.0" layoutY="400.0" prefWidth="150.0" />
+      <TextField fx:id="carrierId" layoutX="106.0" layoutY="400.0" />
+      <Label layoutX="37.0" layoutY="404.0" text="省份编号" />
+      <Label layoutX="276.0" layoutY="404.0" text="平台类型" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="383.0" layoutY="185.0" progress="0.0" />
+    </children>
+</Pane>
